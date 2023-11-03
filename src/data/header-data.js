@@ -2,7 +2,6 @@ import { Node, DivNode, TextNode, ListNode, LinkNode, OrderedListNode, Unordered
 
 const header = new DivNode('header');
 header.parentid = 'content';
-header.className = 'header';
 
 const logo = new TextNode('logo');
 logo.parentid = header.id;
