@@ -35,6 +35,3 @@ cards.forEach((element) => {
 });
 
 export const specialsArray = [specials, title, text, flexbox, cardsList, imagesList, cardTitlesList];
-
-
-

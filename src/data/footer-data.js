@@ -6,7 +6,7 @@ footer.parentid = 'content';
 const socialsList = new UnorderedListNode('socialsList');
 socialsList.parentid = footer.id;
 
-let socials = ['Facebook', 'Instagram', 'Tiktok', 'X'];
+let socials = ['Facebook', 'Instagram', 'Tiktok', 'Twitter'];
 let socialLinks = [];
 let socialItems = [];
 
