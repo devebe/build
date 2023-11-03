@@ -1,7 +1,5 @@
 import { render } from "./component";
-import { header, logo, navList, listItems, listLinks, reserveButton } from "./data/header-data";
-
-let headerArray = [header, logo, navList, listItems, listLinks, reserveButton];
+import { headerArray } from "./data/header-data";
 
 export function renderHeader() {
     render(headerArray);

@@ -30,7 +30,7 @@ const reserveButton = new ButtonNode('reserve');
 reserveButton.parentid = header.id;
 reserveButton.setText('Reserve a table');
 
-export {header, logo, navList, listItems, listLinks, reserveButton};
+export const headerArray = [header, logo, navList, listItems, listLinks, reserveButton];
 
 
 
