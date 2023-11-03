@@ -45,7 +45,24 @@ class Component {
     };
 };
 
-export default function buildUpComponent(obj) {
+export function buildUpComponent(obj) {
     let component = new Component(obj);
     component.build();
+};
+
+export function render(array) {
+    array.forEach((element) => {
+        if (element.id) {
+            buildUpComponent(element);
+            return;
+        }
+        if (!element.id) {
+            element.forEach((item) => {
+                buildUpComponent(item);
+            });
+        }
+        else {
+            console.log(['weird', element]);
+        }; 
+    });
 };
