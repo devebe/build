@@ -1,9 +1,9 @@
 class Component {
     constructor(obj) {
         this.name = obj.name;
+        this.className = obj.className;
         this.id = obj.id;
         this.tag = obj.tag;
-        this.className = obj.className;
         this.parentid = obj.parentid;
         this.text = obj.text;
         this.url = obj.url

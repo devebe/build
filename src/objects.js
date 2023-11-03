@@ -3,9 +3,9 @@ import { generateRandomString } from "./id-generator"
 export class Node {
     constructor(name) {
         this.name = name;
+        this.className = name;
         this.id = generateRandomString(12);
         this.tag = 'div';
-        this.className = name;
         this.parentid = '';
     };
 };

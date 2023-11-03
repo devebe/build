@@ -11,7 +11,7 @@ logo.setHeading('h3');
 const navList = new UnorderedListNode('navlist');
 navList.parentid = header.id;
 
-let links = ['Menu', 'About us', 'Contact', 'Events'];
+let links = ['Menu', 'About us', 'Contact', 'Events', 'Careers'];
 let listLinks = [];
 let listItems = [];
 
@@ -31,6 +31,3 @@ reserveButton.parentid = header.id;
 reserveButton.setText('Reserve a table');
 
 export const headerArray = [header, logo, navList, listItems, listLinks, reserveButton];
-
-
-
