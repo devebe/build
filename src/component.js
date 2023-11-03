@@ -1,4 +1,4 @@
-export default class Component {
+class Component {
     constructor(obj) {
         this.name = obj.name;
         this.id = obj.id;
@@ -43,4 +43,9 @@ export default class Component {
         if (this.url) {this.setUrl()};
         this.appendNode();
     };
+};
+
+export default function buildUpComponent(obj) {
+    let component = new Component(obj);
+    component.build();
 };

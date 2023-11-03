@@ -1,7 +1,7 @@
 import { Node, DivNode, TextNode, ListNode, LinkNode, OrderedListNode, UnorderedListNode, ButtonNode, ImageNode } from "../objects";
 
 const header = new DivNode('header');
-header.parentid = 'body';
+header.parentid = 'content';
 header.className = 'header';
 
 const logo = new TextNode('logo');
@@ -12,7 +12,7 @@ logo.setHeading('h3');
 const navList = new UnorderedListNode('navlist');
 navList.parentid = header.id;
 
-let links = ['Menu', 'About us', 'Contact', 'Careers', 'Events'];
+let links = ['Menu', 'About us', 'Contact', 'Events'];
 let listLinks = [];
 let listItems = [];
 
