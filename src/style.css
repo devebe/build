@@ -1,0 +1,189 @@
+:root, html, h1, h2, h3, h4, p, ul, ol, li, body {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    border: none;
+}
+
+body, button {
+    font-family: Hanken Grotesk, SF Pro, Roboto, 'sans-serif';
+    font-size: 1rem;
+    line-height: 1.5;
+    letter-spacing: .02rem;
+    background-color: #fcc6c680;
+}
+
+
+.header {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    background-color: #ffffff40;
+    backdrop-filter: blur(1rem);
+    align-items: center;
+    padding-left: 2rem;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+.logo {
+    justify-self: start;
+    text-transform: uppercase;
+    color:#000000;
+    font-weight: 300;
+    font-size: 2rem;
+}
+
+.navlist {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    justify-self: center;
+}
+
+button {
+    border: 2px solid #000000;
+    box-sizing: border-box;
+    background-color: #ffffff;
+    color:#000000;
+    padding: 1rem;
+}
+
+button:hover {
+    border: 2px solid #a30000;
+    background-color: #a30000;
+    color: #ffffff;
+    transition: ease-in-out 0.2s;
+    cursor: pointer;
+}
+
+.header > button.reserve {
+    padding: 2rem 2rem;
+    border: none;
+    background-color: #430000;
+    color: #ffffff;
+    justify-self: end;
+}
+
+.header > button.reserve:hover {
+    padding: 2rem 2rem;
+    background-color: #a30000;
+    color: #ffffff;
+    justify-self: end;
+}
+
+.listItem > button {
+    border: 2px solid #ffffff00;
+    padding: 0.5rem;
+    background-color: #ffffff00;
+}
+
+.listItem > button:hover, button.active {
+    color:#000000;
+    background-color: #ff9494;
+}
+
+.hero {
+    color: #000000;
+    padding: 6rem 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+    align-items: center;
+}
+
+h1 {
+    font-size: 5rem;
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 0.5rem;
+    background-color: #ff9494b0;
+    padding: 0rem 2rem;
+}
+
+h2 {
+    text-transform: uppercase;
+    font-size: 2rem;
+    font-weight: 300;
+}
+
+h3 {
+    text-transform: uppercase;
+    font-size: 2.5rem;
+    font-weight: 300;
+}
+
+h4 {
+    text-transform: uppercase;
+    font-size: 1.25rem;
+    font-weight: 300;
+}
+
+.actions {
+    display: flex;
+    flex-direction: row;
+    padding-top: 2rem;
+    gap: 2rem;
+}
+
+.actions > button {
+    width: 200px;
+}
+
+.specials {
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 5rem 2rem;
+}
+
+.flexbox {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 2rem; 
+    justify-content: center;
+}
+
+.card {
+    padding: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    flex: 1;
+    background-color: #fcc6c6;
+    backdrop-filter: blur(0.5rem);
+    font-weight: 300;
+    min-width: 240px;
+    max-width: 400px;
+}
+
+.card > h4 {
+    margin-left: 0.5rem;
+    color: #000000;
+}
+
+.image {
+    height: 300px;
+    background-color: #ffffff;
+}
+
+a, a:visited {
+    color:#000000;
+}
+
+a:hover {
+    color:#a30000;
+}
+
+.footer {
+    background-color: #430000;
+    padding: 4rem 2rem 6rem;
+    color:#fcc6c6;
+}
+
+.footer > a, a:visited {
+    color:#fcc6c6;
+}

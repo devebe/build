@@ -3,6 +3,24 @@ import { Node, DivNode, TextNode, ListNode, LinkNode, OrderedListNode, Unordered
 const footer = new DivNode('footer');
 footer.parentid = 'content';
 
+const socialsList = new UnorderedListNode('socialsList');
+socialsList.parentid = footer.id;
+
+let socials = ['Facebook', 'Instagram', 'Tiktok', 'X'];
+let socialLinks = [];
+let socialItems = [];
+
+socials.forEach((element) => {
+    const socialItem = new ListNode('socialItem');
+    socialItem.parentid = socialsList.id;
+    socialItems.push(socialItem);
+    const socialLink = new LinkNode('socialLink');
+    socialLink.parentid = socialItem.id;
+    socialLink.setText(element);
+    socialLink.setUrl('#');
+    socialLinks.push(socialLink);
+});
+
 const linkList = new UnorderedListNode('linkList');
 linkList.parentid = footer.id;
 
@@ -25,4 +43,4 @@ let copyright = new TextNode('copyright');
 copyright.setText('2023 Restaurant The Little Sinner. All rights reserved.');
 copyright.parentid = footer.id;
 
-export const footerArray = [footer, linkList, listItems, listLinks, copyright];
+export const footerArray = [footer, socialsList, socialItems, socialLinks, linkList, listItems, listLinks, copyright];

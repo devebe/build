@@ -11,7 +11,7 @@ title.setText('We are all sinners');
 const subtitle = new TextNode('subtitle');
 subtitle.parentid = hero.id;
 subtitle.setHeading('h2');
-subtitle.setText('Scandalously delicious');
+subtitle.setText('Scandalously delicious sin-sational dining');
 
 const actions = new DivNode('actions');
 actions.parentid = hero.id;
