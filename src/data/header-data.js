@@ -5,7 +5,7 @@ header.parentid = 'content';
 
 const logo = new TextNode('logo');
 logo.parentid = header.id;
-logo.setText('Restaurant De Kleine Zondaar');
+logo.setText('The Little Sinner');
 logo.setHeading('h3');
 
 const navList = new UnorderedListNode('navlist');

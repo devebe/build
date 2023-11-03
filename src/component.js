@@ -45,7 +45,7 @@ class Component {
     };
 };
 
-export function buildUpComponent(obj) {
+function buildUpComponent(obj) {
     let component = new Component(obj);
     component.build();
 };

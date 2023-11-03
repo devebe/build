@@ -22,7 +22,7 @@ links.forEach((element) => {
 });
 
 let copyright = new TextNode('copyright');
-copyright.setText('2023 Restaurant De Kleine Zondaar. All rights reserved.');
+copyright.setText('2023 Restaurant The Little Sinner. All rights reserved.');
 copyright.parentid = footer.id;
 
 export const footerArray = [footer, linkList, listItems, listLinks, copyright];
