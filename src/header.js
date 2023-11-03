@@ -3,7 +3,7 @@ import { header, logo, navList, listItems, listLinks, reserveButton } from "./da
 
 export function renderHeader() {
     let headerArray = [header, logo, navList, listItems, listLinks, reserveButton];
-
+    
     headerArray.forEach((element) => {
         if (element.id) {
             buildUpComponent(element);
