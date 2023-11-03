@@ -69,6 +69,7 @@ export class ImageNode extends Node {
     constructor(name) {
         super(name);
         this.tag = 'img';
+        this.src = '#'
     };
 };
 
