@@ -14,3 +14,8 @@ links.forEach((element) => {
     listLink.setUrl('#');
     listLinks.push(listLink);
 });
+
+let copyright = new TextNode('copyright');
+copyright.setText('2023 Restaurant De Kleine Zondaar. All rights reserved.');
+
+export { listItems, listLinks, copyright };
