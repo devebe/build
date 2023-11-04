@@ -14,15 +14,19 @@ navList.parentid = header.id;
 let links = ['Menu', 'Contact'];
 let listButtons = [];
 let listItems = [];
+let i = 1;
 
 links.forEach((element) => {
     const listItem = new ListNode('listItem');
     listItem.parentid = navList.id;
+    listItem.id = listItem.id + '-' + i;
     listItems.push(listItem);
     const listButton = new ButtonNode('listButton');
     listButton.parentid = listItem.id;
+    listButton.id = listButton.id + '-' + i;
     listButton.setText(element);
     listButtons.push(listButton);
+    i++;
 });
 
 const reserveButton = new ButtonNode('reserve');

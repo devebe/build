@@ -4,8 +4,8 @@ export class Node {
     constructor(name) {
         this.name = name;
         this.className = name;
-        this.id = generateRandomString(12);
         this.tag = 'div';
+        this.id = this.tag + '-' + this.name;
         this.parentid = '';
     };
 };
