@@ -31,8 +31,15 @@ body, button {
     justify-self: start;
     text-transform: uppercase;
     color:#000000;
-    font-weight: 300;
-    font-size: 2rem;
+    font-weight: 400;
+    font-size: 1.5rem;
+}
+
+.logo:hover {
+    font-weight: 400;
+    cursor: pointer;
+    color: #a30000;
+    transition: ease 0.3s;
 }
 
 .navlist {
@@ -47,6 +54,7 @@ button {
     box-sizing: border-box;
     background-color: #ffffff;
     color:#000000;
+    transition: ease-in-out 0.3s;
     padding: 1rem;
 }
 
@@ -59,7 +67,7 @@ button:hover {
 }
 
 .header > button.reserve {
-    padding: 2rem 2rem;
+    padding: 1.5rem 2rem;
     border: none;
     background-color: #430000;
     color: #ffffff;
@@ -67,7 +75,7 @@ button:hover {
 }
 
 .header > button.reserve:hover {
-    padding: 2rem 2rem;
+    padding: 1.5rem 2rem;
     background-color: #a30000;
     color: #ffffff;
     justify-self: end;
@@ -75,7 +83,7 @@ button:hover {
 
 .listItem > button {
     border: 2px solid #ffffff00;
-    padding: 0.5rem;
+    padding: 0.5rem 1rem;
     background-color: #ffffff00;
 }
 
@@ -110,7 +118,7 @@ h2 {
 
 h3 {
     text-transform: uppercase;
-    font-size: 2.5rem;
+    font-size: 2rem;
     font-weight: 300;
 }
 
@@ -176,7 +184,7 @@ a, a:visited {
 
 .footer {
     background-color: #000000;
-    padding: 2rem 2rem 6rem;
+    padding: 0rem 2rem 6rem;
     color:#fcc6c6;
     display: flex;
     flex-direction: column;
@@ -198,16 +206,18 @@ a.socialLink:hover, a.listLink:hover {
     gap: 2rem;
     padding-bottom: 2rem;
     align-self: end;
+    padding: 2rem 1rem;
 }
 
 .linkList {
     display: flex;
     flex-direction: row;
     gap: 2rem;
-    padding: 1rem 0rem;
-    border-top: 1px solid #ff9494;
+    padding: 1rem 1rem;
+    border-top: 1px solid #bd5555;
 }
 
 .copyright {
-    color: #813939;
+    color: #bd5555;
+    padding-left: 1rem;
 }
