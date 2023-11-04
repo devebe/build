@@ -206,18 +206,17 @@ a.socialLink:hover, a.listLink:hover {
     gap: 2rem;
     padding-bottom: 2rem;
     align-self: end;
-    padding: 2rem 1rem;
+    padding: 2rem 0rem;
 }
 
 .linkList {
     display: flex;
     flex-direction: row;
     gap: 2rem;
-    padding: 1rem 1rem;
+    padding: 1rem 0rem;
     border-top: 1px solid #bd5555;
 }
 
 .copyright {
     color: #bd5555;
-    padding-left: 1rem;
 }
