@@ -220,3 +220,26 @@ a.socialLink:hover, a.listLink:hover {
 .copyright {
     color: #bd5555;
 }
+
+.address {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+    padding: 5rem;
+    align-items: center;
+    background-color:#ffffff;
+}
+
+.address > h3 {
+    font-size: 3rem;
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 0.5rem;
+    background-color: #ff9494b0;
+    padding: 0rem 2rem;
+    margin-bottom: 2rem;
+}
+
+.location {
+    text-align: center;
+}
