@@ -19,19 +19,24 @@ let cards = ['Cheesy Spinach Artichoke Dip','Butter Chicken Curry','Melanzane al
 let cardsList = [];
 let imagesList = [];
 let cardTitlesList = [];
+let i = 1;
 
 cards.forEach((element) => {
     let card = new DivNode('card');
     card.parentid = flexbox.id;
+    card.id = card.id + '-' + i;
     cardsList.push(card);
     let image = new ImageNode('image');
     image.parentid = card.id;
+    image.id = image.id + '-' + i;
     imagesList.push(image);
     let cardTitle = new TextNode('cardTitle');
     cardTitle.parentid = card.id;
+    cardTitle.id = cardTitle.id + '-' + i;
     cardTitle.setHeading('h4');
     cardTitle.setText(element)
     cardTitlesList.push(cardTitle);
+    i++;
 });
 
 export const specialsArray = [specials, title, text, flexbox, cardsList, imagesList, cardTitlesList];
