@@ -10,7 +10,6 @@ body, button {
     font-size: 1rem;
     line-height: 1.5;
     letter-spacing: .02rem;
-    background-color: #fcc6c680;
 }
 
 
@@ -92,8 +91,9 @@ button:hover {
     background-color: #ff9494;
 }
 
-.hero {
+.hero, .menu {
     color: #000000;
+    background-color: #fcc6c6;
     padding: 6rem 2rem;
     display: flex;
     flex-direction: column;
@@ -246,4 +246,29 @@ a.socialLink:hover, a.listLink:hover {
 
 .location {
     text-align: center;
+}
+
+.menu {
+    gap: 2rem;
+    background-color: #f5f5f5;
+}
+
+.menu > h1 {
+    background-color: #ffffff;
+    color: #a30000;
+}
+
+.starters, .mains, .desserts {
+    width: 80%;
+    padding: 3rem 0rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+    border-bottom: 1px solid #a30000;
+    text-transform: uppercase;
+}
+
+.desserts {
+    border-bottom: none;
 }

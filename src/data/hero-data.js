@@ -16,11 +16,11 @@ subtitle.setText('Scandalously delicious sin-sational dining');
 const actions = new DivNode('actions');
 actions.parentid = hero.id;
 
-const menuButton = new ButtonNode('menu');
+const menuButton = new ButtonNode('menuButton');
 menuButton.parentid = actions.id;
 menuButton.setText('View menu');
 
-const reserveButton = new ButtonNode('reserve');
+const reserveButton = new ButtonNode('reserveButton');
 reserveButton.parentid = actions.id;
 reserveButton.setText('Reserve a table');
 

@@ -29,7 +29,7 @@ starterDishes.forEach((element) => {
     i++;
 });
 
-const mains = new DivNode('starters');
+const mains = new DivNode('mains');
 mains.parentid = menu.id;
 
 const mainsTitle = new TextNode('mainsTitle');
@@ -48,6 +48,27 @@ mainCourses.forEach((element) => {
     mainCourse.setText(element);
     mainCoursesList.push(mainCourse);
     j++;
-})
+});
 
-export const menuArray = [menu, title, starters, startersTitle, starterDishesList, mains, mainsTitle, mainCoursesList];
+const desserts = new DivNode('desserts');
+desserts.parentid = menu.id;
+
+const dessertsTitle = new TextNode('mainsTitle');
+dessertsTitle.parentid = desserts.id;
+dessertsTitle.setHeading('h3');
+dessertsTitle.setText('Desserts');
+
+let dessertCourses = ['Pumpkin Spice Pie','Carrot Cake','Gulab Jamun'];
+let dessertCoursesList = [];
+let k = 1;
+
+dessertCourses.forEach((element) => {
+    const dessertCourse = new TextNode('dessertcourse');
+    dessertCourse.id = dessertCourse.id + '-' + k;
+    dessertCourse.parentid = desserts.id;
+    dessertCourse.setText(element);
+    dessertCoursesList.push(dessertCourse);
+    k++;
+});
+
+export const menuArray = [menu, title, starters, startersTitle, starterDishesList, mains, mainsTitle, mainCoursesList, desserts, dessertsTitle, dessertCoursesList];
